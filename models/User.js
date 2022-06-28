@@ -13,7 +13,6 @@ const userSchema = new Schema(
         required: true,
         unique: true,
         match: [/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/, 'Fill in your email address.'],
-        ,
       },
       thoughts: [
         {
@@ -27,12 +26,7 @@ const userSchema = new Schema(
             ref: 'User'
         }
       ],
-    {
-      toJSON: {
-        getters: true,
-      },
-    }
-  );
+  });
   
 
 userSchema.virtual('friendCount').get(function(){
