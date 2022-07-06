@@ -21,6 +21,7 @@
   "homepage": "https://github.com/WmHHardgrove/socialNetworkAPI_billbook#readme",
   "dependencies": {
     "express": "^4.18.1",
+    "moment": "^2.29.3",
     "mongoose": "^6.4.1",
     "nodemon": "^2.0.18"
   }
